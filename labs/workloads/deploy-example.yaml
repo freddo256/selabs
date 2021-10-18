@@ -17,6 +17,7 @@ spec:
     metadata:
       labels:
         app: nginx
+        bada: bing
     spec:
       containers:
       - name: nginx

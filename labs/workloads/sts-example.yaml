@@ -10,11 +10,12 @@ spec:
       app: stateful
   serviceName: app
   updateStrategy:
-    type: OnDelete
+    type: RollingUpdate
   template:
     metadata:
       labels:
         app: stateful
+        ba: zinga
     spec:
       containers:
       - name: nginx
